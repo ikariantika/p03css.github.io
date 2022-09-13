@@ -1,87 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../css/style.css">
-	<title>5 Teman Terbaikku</title>
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabel css</title>
+    <style>
+         body{
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            background-color: rgb(145, 141, 141);
+        }
 
-<style>
-        table {
-            border-collapse: collapse;
+        .tombol{
+            height: 40px;
+            width: 100px;
+            background-color: rgb(188, 164, 188);
+            border: 1px solid;
+            border-radius: 20px;
+            margin-top: 30px;
+            transition: 0.3s;
+            align-items: center;
         }
-        table, th, td {
-            border: 1px solid black;
+
+        .tombol h3{
+            margin-top: 10px;
         }
-        th, td {
-            padding: 20px;
+
+        .tombol:hover {
+            background-color: rgb(198, 191, 191);
         }
-        th {
-            background-color: Pink;
+
+        table tr th{
+            background-color: rgb(194, 237, 222);
+            transition: 0.4s;
+        }
+
+        table tr th:hover{
+            background-color: rgb(235, 229, 229);
+            transform: scale(1.1);
+            transition: 0.2s;
+        }
+        
+        table tr td{
+            background-color: rgb(188, 164, 188);
+            transition: 0.4;
+        }
+
+        table tr td:hover{
+            background-color: rgb(198, 191, 191);
+            transform: scale(1.1);
+            transition: 0.2s;
+        }
+
+        a{
+            text-decoration: none;
             color: black;
+            background-color: transparent;
         }
     </style>
+</head>
 <body>
-	<h1 class="judul">5 Teman Terbaikku</h1>
-	<table class="tabel">
-		<tbody>
-		<tr class="tabel-utama">
-			<th>No</th>
-			<th>Nama</th>
-			<th>NIM</th>
-			<th>Alamat</th>
-			<th colspan="2">Aksi</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<td>Elsa Damayanti</td>
-			<td>41215373</td>
-			<td>Kubangdeleg</td>
-			<td class="ubah">Edit</td>
-			<td class="hapus">Hapus</td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td>Feni Mahmudah</td>
-			<td>41215381</td>
-			<td>Sarajaya</td>
-			<td class="ubah">Edit</td>
-			<td class="hapus">Hapus</td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td>Divia Azarine</td>
-			<td>41215685</td>
-			<td>Kesambi</td>
-			<td class="ubah">Edit</td>
-			<td class="hapus">Hapus</td>
-		</tr>
-		<tr>
-			<td>4</td>
-			<td>Dwina Aurelia</td>
-			<td>41215611</td>
-			<td>Tegal Gubug</td>
-			<td class="ubah">Edit</td>
-			<td class="hapus">Hapus</td>
-		</tr>
-		<tr>
-			<td>5</td>
-			<td>Eka Puspita</td>
-			<td>41215610</td>
-			<td>Tegal Gubug</td>
-			<td class="ubah">Edit</td>
-			<td class="hapus">Hapus</td>
-		</tr>
-		</tbody>
-	</table>
-	<script src="../jquery/jquery.js"></script>
-	<script src="../p03jquery/script.js"></script>
-
-	<div class="back-friendscss">
-		<p>
-		<a onclick="alert('Terimakasih☺️🙏')" href="../index.html">Back</a>
-	</p>
-	</div>
+    <center>
+    <div class="judul">
+        <h2>5 Teman Terbaikku</h2>
+    </div>
+    <table border="1" cellpadding="17" cellspacing="5">
+        <tr>
+            <th>No</th>
+            <th>Nama Teman</th>
+            <th>Alamat</th>
+            <th>Aksi</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ika Riantika</td>
+            <td>Karangasem</td>
+            <td>Edit | Hapus</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Divia Azarine</td>
+            <td>Kesambi</td>
+            <td>Edit | Hapus</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Feni Mahmudah</td>
+            <td>Sarajaya</td>
+            <td>Edit | Hapus</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Eka Puspita</td>
+            <td>Tegal Gubug</td>
+            <td>Edit | Hapus</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Dwina Aurelia</td>
+            <td>Tegal Gubug</td>
+            <td>Edit | Hapus</td>
+        </tr>
+    </table>
+    <a onClick="alert('Apakah kamu mau kembali?')" href="../index.html">
+        <div class="tombol"><h3>Back</h3></div>
+    </a>
+    </center>
 </body>
 </html>
